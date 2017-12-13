@@ -1,0 +1,20 @@
+{
+  "name": "My Mod Name",
+  "version": "1.0.0",
+  "author": "Me",
+  "description": "This is a mod for DBM!",
+  "repository": {
+    "type": "git",
+    "repository_url": "https://github.com/Discord-Bot-Maker-Mods/DBM-Mod-Installer",
+    "branchname": "master"
+  },
+  "mod": {
+    "type": "actions",
+    "installtodbm": true,
+    "installtobot": true
+  },
+  "ignore": [
+    "*.md",
+    ".git"
+  ]
+}
