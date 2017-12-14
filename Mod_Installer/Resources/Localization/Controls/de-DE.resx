@@ -139,7 +139,7 @@
     <value>Aktualisiere Mods</value>
   </data>
   <data name="DBMDirectory_label" xml:space="preserve">
-    <value>Discord Bot Maker Haupt Ordner</value>
+    <value>Discord Bot Maker Installationsverzeichnis</value>
   </data>
   <data name="gbAdvancedOptions" xml:space="preserve">
     <value>Erweiterte Optionen</value>
