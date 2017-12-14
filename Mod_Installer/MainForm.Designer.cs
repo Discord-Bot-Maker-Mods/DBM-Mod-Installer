@@ -55,14 +55,25 @@ namespace Mod_Installer
             this.folderBrowserDialog_BOTPath = new System.Windows.Forms.FolderBrowserDialog();
             this.fileBrowserDialog_AddZipPath = new System.Windows.Forms.OpenFileDialog();
             this.ToolTips = new System.Windows.Forms.ToolTip(this.components);
+            this.btnDBMDirectoryBrowse = new System.Windows.Forms.Button();
+            this.btnResyncMods = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnFile = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnQuit = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnHelp = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnReportIssues = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnOpenDBMGithub = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnOpenDBMThemeGithub = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPatreons = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnDBMPatreon = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnGeneralWrexPatreon = new System.Windows.Forms.ToolStripMenuItem();
             this.gbDirectories = new System.Windows.Forms.GroupBox();
             this.DBMDirectory_label = new System.Windows.Forms.Label();
             this.tbDBMDirectory = new System.Windows.Forms.TextBox();
-            this.btnDBMDirectoryBrowse = new System.Windows.Forms.Button();
             this.tbBOTDirectory = new System.Windows.Forms.TextBox();
             this.btnBOTDirectoryBrowse = new System.Windows.Forms.Button();
             this.BOTDirectory_label = new System.Windows.Forms.Label();
@@ -74,20 +85,13 @@ namespace Mod_Installer
             this.cbbLanguage_label = new System.Windows.Forms.Label();
             this.cbbLanguage = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnResyncMods = new System.Windows.Forms.Button();
             this.dbmModInstallerLog = new System.Windows.Forms.GroupBox();
             this.tbLog = new System.Windows.Forms.TextBox();
             this.btnInstallMods = new System.Windows.Forms.Button();
-            this.btnFile = new System.Windows.Forms.ToolStripDropDownButton();
-            this.btnQuit = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnHelp = new System.Windows.Forms.ToolStripDropDownButton();
-            this.btnPatreons = new System.Windows.Forms.ToolStripDropDownButton();
-            this.btnReportIssues = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnOpenDBMGithub = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDBMPatreon = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnGeneralWrexPatreon = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnOpenDBMThemeGithub = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.cbAllowModsWithoutManifests = new System.Windows.Forms.CheckBox();
+            this.tbGlobalFileIgnores = new System.Windows.Forms.TextBox();
+            this.GlobalFileIgnores_Label = new System.Windows.Forms.Label();
+            this.btnClearLog = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.gbDirectories.SuspendLayout();
@@ -106,6 +110,24 @@ namespace Mod_Installer
             this.fileBrowserDialog_AddZipPath.FileName = "DBM-Mods.zip";
             resources.ApplyResources(this.fileBrowserDialog_AddZipPath, "fileBrowserDialog_AddZipPath");
             this.fileBrowserDialog_AddZipPath.Multiselect = true;
+            // 
+            // btnDBMDirectoryBrowse
+            // 
+            resources.ApplyResources(this.btnDBMDirectoryBrowse, "btnDBMDirectoryBrowse");
+            this.btnDBMDirectoryBrowse.Name = "btnDBMDirectoryBrowse";
+            this.ToolTips.SetToolTip(this.btnDBMDirectoryBrowse, resources.GetString("btnDBMDirectoryBrowse.ToolTip"));
+            this.btnDBMDirectoryBrowse.UseVisualStyleBackColor = true;
+            this.btnDBMDirectoryBrowse.Click += new System.EventHandler(this.btnDBMDirectoryBrowse_Click);
+            // 
+            // btnResyncMods
+            // 
+            this.btnResyncMods.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnResyncMods, "btnResyncMods");
+            this.btnResyncMods.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnResyncMods.Name = "btnResyncMods";
+            this.ToolTips.SetToolTip(this.btnResyncMods, resources.GetString("btnResyncMods.ToolTip"));
+            this.btnResyncMods.UseVisualStyleBackColor = false;
+            this.btnResyncMods.Click += new System.EventHandler(this.btnResyncMods_Click);
             // 
             // statusStrip1
             // 
@@ -127,6 +149,75 @@ namespace Mod_Installer
             this.btnPatreons});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
+            // 
+            // btnFile
+            // 
+            this.btnFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnQuit});
+            resources.ApplyResources(this.btnFile, "btnFile");
+            this.btnFile.Name = "btnFile";
+            // 
+            // btnQuit
+            // 
+            this.btnQuit.Name = "btnQuit";
+            resources.ApplyResources(this.btnQuit, "btnQuit");
+            this.btnQuit.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnReportIssues,
+            this.btnOpenDBMGithub,
+            this.btnOpenDBMThemeGithub,
+            this.btnAbout});
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.Name = "btnHelp";
+            // 
+            // btnReportIssues
+            // 
+            this.btnReportIssues.Name = "btnReportIssues";
+            resources.ApplyResources(this.btnReportIssues, "btnReportIssues");
+            this.btnReportIssues.Click += new System.EventHandler(this.reportIssuesToolStripMenuItem_Click);
+            // 
+            // btnOpenDBMGithub
+            // 
+            this.btnOpenDBMGithub.Name = "btnOpenDBMGithub";
+            resources.ApplyResources(this.btnOpenDBMGithub, "btnOpenDBMGithub");
+            this.btnOpenDBMGithub.Click += new System.EventHandler(this.openDBToolStripMenuItem_Click);
+            // 
+            // btnOpenDBMThemeGithub
+            // 
+            this.btnOpenDBMThemeGithub.Name = "btnOpenDBMThemeGithub";
+            resources.ApplyResources(this.btnOpenDBMThemeGithub, "btnOpenDBMThemeGithub");
+            this.btnOpenDBMThemeGithub.Click += new System.EventHandler(this.dBMThemesGithubToolStripMenuItem_Click);
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.Name = "btnAbout";
+            resources.ApplyResources(this.btnAbout, "btnAbout");
+            // 
+            // btnPatreons
+            // 
+            this.btnPatreons.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnPatreons.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnDBMPatreon,
+            this.btnGeneralWrexPatreon});
+            resources.ApplyResources(this.btnPatreons, "btnPatreons");
+            this.btnPatreons.Name = "btnPatreons";
+            // 
+            // btnDBMPatreon
+            // 
+            this.btnDBMPatreon.Name = "btnDBMPatreon";
+            resources.ApplyResources(this.btnDBMPatreon, "btnDBMPatreon");
+            this.btnDBMPatreon.Click += new System.EventHandler(this.pledgeToDBMModsPatreonToolStripMenuItem_Click);
+            // 
+            // btnGeneralWrexPatreon
+            // 
+            this.btnGeneralWrexPatreon.Name = "btnGeneralWrexPatreon";
+            resources.ApplyResources(this.btnGeneralWrexPatreon, "btnGeneralWrexPatreon");
+            this.btnGeneralWrexPatreon.Click += new System.EventHandler(this.pledgeToGeneralWrexsPatreonToolStripMenuItem_Click);
             // 
             // gbDirectories
             // 
@@ -150,14 +241,6 @@ namespace Mod_Installer
             resources.ApplyResources(this.tbDBMDirectory, "tbDBMDirectory");
             this.tbDBMDirectory.Name = "tbDBMDirectory";
             this.tbDBMDirectory.TextChanged += new System.EventHandler(this.tbDBMDirectory_TextChanged);
-            // 
-            // btnDBMDirectoryBrowse
-            // 
-            resources.ApplyResources(this.btnDBMDirectoryBrowse, "btnDBMDirectoryBrowse");
-            this.btnDBMDirectoryBrowse.Name = "btnDBMDirectoryBrowse";
-            this.ToolTips.SetToolTip(this.btnDBMDirectoryBrowse, resources.GetString("btnDBMDirectoryBrowse.ToolTip"));
-            this.btnDBMDirectoryBrowse.UseVisualStyleBackColor = true;
-            this.btnDBMDirectoryBrowse.Click += new System.EventHandler(this.btnDBMDirectoryBrowse_Click);
             // 
             // tbBOTDirectory
             // 
@@ -211,13 +294,17 @@ namespace Mod_Installer
             // 
             // gbAdvancedOptions
             // 
-            this.gbAdvancedOptions.Controls.Add(this.cbbLanguage_label);
-            this.gbAdvancedOptions.Controls.Add(this.cbbLanguage);
+            this.gbAdvancedOptions.Controls.Add(this.cbAllowModsWithoutManifests);
+            this.gbAdvancedOptions.Controls.Add(this.GlobalFileIgnores_Label);
+            this.gbAdvancedOptions.Controls.Add(this.tbGlobalFileIgnores);
             this.gbAdvancedOptions.Controls.Add(this.label2);
+            this.gbAdvancedOptions.Controls.Add(this.cbbLanguage_label);
             this.gbAdvancedOptions.Controls.Add(this.btnResyncMods);
+            this.gbAdvancedOptions.Controls.Add(this.cbbLanguage);
             resources.ApplyResources(this.gbAdvancedOptions, "gbAdvancedOptions");
             this.gbAdvancedOptions.Name = "gbAdvancedOptions";
             this.gbAdvancedOptions.TabStop = false;
+            this.gbAdvancedOptions.Enter += new System.EventHandler(this.gbAdvancedOptions_Enter);
             // 
             // cbbLanguage_label
             // 
@@ -235,16 +322,6 @@ namespace Mod_Installer
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // btnResyncMods
-            // 
-            this.btnResyncMods.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.btnResyncMods, "btnResyncMods");
-            this.btnResyncMods.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnResyncMods.Name = "btnResyncMods";
-            this.ToolTips.SetToolTip(this.btnResyncMods, resources.GetString("btnResyncMods.ToolTip"));
-            this.btnResyncMods.UseVisualStyleBackColor = false;
-            this.btnResyncMods.Click += new System.EventHandler(this.btnResyncMods_Click);
             // 
             // dbmModInstallerLog
             // 
@@ -268,80 +345,37 @@ namespace Mod_Installer
             this.btnInstallMods.UseVisualStyleBackColor = true;
             this.btnInstallMods.Click += new System.EventHandler(this.btnInstallMods_Click);
             // 
-            // btnFile
+            // cbAllowModsWithoutManifests
             // 
-            this.btnFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnQuit});
-            resources.ApplyResources(this.btnFile, "btnFile");
-            this.btnFile.Name = "btnFile";
+            resources.ApplyResources(this.cbAllowModsWithoutManifests, "cbAllowModsWithoutManifests");
+            this.cbAllowModsWithoutManifests.Name = "cbAllowModsWithoutManifests";
+            this.cbAllowModsWithoutManifests.UseVisualStyleBackColor = true;
+            this.cbAllowModsWithoutManifests.CheckedChanged += new System.EventHandler(this.cbAllowModsWithoutManifests_CheckedChanged);
             // 
-            // btnQuit
+            // tbGlobalFileIgnores
             // 
-            this.btnQuit.Name = "btnQuit";
-            resources.ApplyResources(this.btnQuit, "btnQuit");
-            this.btnQuit.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
+            resources.ApplyResources(this.tbGlobalFileIgnores, "tbGlobalFileIgnores");
+            this.tbGlobalFileIgnores.Name = "tbGlobalFileIgnores";
+            this.tbGlobalFileIgnores.TextChanged += new System.EventHandler(this.tbGlobalFileIgnores_TextChanged);
             // 
-            // btnHelp
+            // GlobalFileIgnores_Label
             // 
-            this.btnHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnReportIssues,
-            this.btnOpenDBMGithub,
-            this.btnOpenDBMThemeGithub,
-            this.btnAbout});
-            resources.ApplyResources(this.btnHelp, "btnHelp");
-            this.btnHelp.Name = "btnHelp";
+            resources.ApplyResources(this.GlobalFileIgnores_Label, "GlobalFileIgnores_Label");
+            this.GlobalFileIgnores_Label.Name = "GlobalFileIgnores_Label";
             // 
-            // btnPatreons
+            // btnClearLog
             // 
-            this.btnPatreons.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnPatreons.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnDBMPatreon,
-            this.btnGeneralWrexPatreon});
-            resources.ApplyResources(this.btnPatreons, "btnPatreons");
-            this.btnPatreons.Name = "btnPatreons";
-            // 
-            // btnReportIssues
-            // 
-            this.btnReportIssues.Name = "btnReportIssues";
-            resources.ApplyResources(this.btnReportIssues, "btnReportIssues");
-            this.btnReportIssues.Click += new System.EventHandler(this.reportIssuesToolStripMenuItem_Click);
-            // 
-            // btnOpenDBMGithub
-            // 
-            this.btnOpenDBMGithub.Name = "btnOpenDBMGithub";
-            resources.ApplyResources(this.btnOpenDBMGithub, "btnOpenDBMGithub");
-            this.btnOpenDBMGithub.Click += new System.EventHandler(this.openDBToolStripMenuItem_Click);
-            // 
-            // btnDBMPatreon
-            // 
-            this.btnDBMPatreon.Name = "btnDBMPatreon";
-            resources.ApplyResources(this.btnDBMPatreon, "btnDBMPatreon");
-            this.btnDBMPatreon.Click += new System.EventHandler(this.pledgeToDBMModsPatreonToolStripMenuItem_Click);
-            // 
-            // btnGeneralWrexPatreon
-            // 
-            this.btnGeneralWrexPatreon.Name = "btnGeneralWrexPatreon";
-            resources.ApplyResources(this.btnGeneralWrexPatreon, "btnGeneralWrexPatreon");
-            this.btnGeneralWrexPatreon.Click += new System.EventHandler(this.pledgeToGeneralWrexsPatreonToolStripMenuItem_Click);
-            // 
-            // btnOpenDBMThemeGithub
-            // 
-            this.btnOpenDBMThemeGithub.Name = "btnOpenDBMThemeGithub";
-            resources.ApplyResources(this.btnOpenDBMThemeGithub, "btnOpenDBMThemeGithub");
-            this.btnOpenDBMThemeGithub.Click += new System.EventHandler(this.dBMThemesGithubToolStripMenuItem_Click);
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Name = "btnAbout";
-            resources.ApplyResources(this.btnAbout, "btnAbout");
+            resources.ApplyResources(this.btnClearLog, "btnClearLog");
+            this.btnClearLog.Name = "btnClearLog";
+            this.btnClearLog.UseVisualStyleBackColor = true;
+            this.btnClearLog.Click += new System.EventHandler(this.btnClearLog_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.btnClearLog);
             this.Controls.Add(this.gbDirectories);
             this.Controls.Add(this.gbSelectedModZIPArchives);
             this.Controls.Add(this.gbAdvancedOptions);
@@ -409,6 +443,10 @@ namespace Mod_Installer
         private System.Windows.Forms.Button btnInstallMods;
         private System.Windows.Forms.ToolStripMenuItem btnOpenDBMThemeGithub;
         private System.Windows.Forms.ToolStripMenuItem btnAbout;
+        private System.Windows.Forms.Label GlobalFileIgnores_Label;
+        private System.Windows.Forms.TextBox tbGlobalFileIgnores;
+        private System.Windows.Forms.CheckBox cbAllowModsWithoutManifests;
+        private System.Windows.Forms.Button btnClearLog;
     }
 }
 

@@ -34,6 +34,7 @@ using System.Windows.Forms;
 
 namespace Mod_Installer
 {
+
     public partial class MainForm : Form
     {
         private Config Config = new Config(Path.Combine(Environment.CurrentDirectory, "Config.xml"));
@@ -99,6 +100,8 @@ namespace Mod_Installer
             cbbLanguage.DisplayMember = "Value";
             cbbLanguage.ValueMember = "Key";
 
+            cbAllowModsWithoutManifests.Checked = Config.Settings.AllowModsWithoutManifests;
+
             foreach (var zip in Config.Settings.ZipFiles.ToArray())
             {
                 AddMod(zip);
@@ -106,6 +109,8 @@ namespace Mod_Installer
 
             tbDBMDirectory.Text = Config.Settings.DBMRootPath;
             tbBOTDirectory.Text = Config.Settings.BotProjectPath;
+
+            tbGlobalFileIgnores.Text = Config.Settings.GlobalIgnores;
 
             Log("DBM Mod Installer Initiated..");
         }
@@ -148,10 +153,35 @@ namespace Mod_Installer
 
         private bool ShouldIgnoreFile(string path, ModManifest manifest)
         {
-            if (path.Contains("modinfo.json"))
-                return true;
+            var ignores = new List<string>();
 
-            foreach (var ignore in manifest.Ignore)
+            if(manifest != null)
+            {
+                if (path.Contains("modinfo.json"))
+                    return true;
+
+                ignores.AddRange(manifest.Ignore);
+            }
+
+            if (!string.IsNullOrEmpty(Config.Settings.GlobalIgnores))
+            {
+                try
+                {
+                    var globIgnores = Config.Settings.GlobalIgnores.Split(',');
+
+                    if (globIgnores != null && globIgnores.Length > 0)
+                    {
+                        ignores.AddRange(globIgnores);
+                    }
+                }
+                catch (Exception)
+                {
+
+                }
+              
+            }
+
+            foreach (var ignore in ignores)
             {
                 string rex = "^" + Regex.Escape(ignore).Replace("\\?", ".").Replace("\\*", ".*") + "$";
                 if (Regex.IsMatch(path, rex))
@@ -233,16 +263,27 @@ namespace Mod_Installer
                 AddProgress();
                 ModManifest manifest = ReadManifest(modName);
 
+                var name = manifest == null ? modName : manifest.Name;
+
                 Log($"--------MOD INFO-----------");
-                Log($"Name: {manifest.Name}");
-                Log($"Author: {manifest.Author}");
-                Log($"Version: {manifest.Version}");
-                Log($"Mod Type: {manifest.Mod.Type}");
-                Log($"Description: {manifest.Description}");
-                Log($"Repository Url: {manifest.Repository.RepositoryUrl}");
+                Log($"Name: {name}");
+
+                if (manifest != null)
+                {                   
+                    Log($"Author: {manifest.Author}");
+                    Log($"Version: {manifest.Version}");
+                    Log($"Mod Type: {manifest.Mod.Type}");
+                    Log($"Description: {manifest.Description}");
+                    Log($"Repository Url: {manifest.Repository.RepositoryUrl}");                 
+                }
+                else
+                {
+                    Log($"No Manifest");
+                }
                 Log($"----------------------------");
 
-                if (manifest.Mod.InstallToBot)
+
+                if (manifest != null && manifest.Mod.InstallToBot || Config.Settings.AllowModsWithoutManifests)
                 {
                     Log($"Copying files for'{modName}' to BOT in '{BotTempPath}'...");
                     AddProgress();
@@ -250,7 +291,7 @@ namespace Mod_Installer
                     AddProgress();
                 }
 
-                if (manifest.Mod.InstallToDBM)
+                if (manifest != null && manifest.Mod.InstallToDBM || Config.Settings.AllowModsWithoutManifests)
                 {
                     AddProgress();
                     Log($"Copying files for'{modName}' to DBM '{DBMTempPath}'...");
@@ -259,7 +300,7 @@ namespace Mod_Installer
                 }
                 AddProgress();
 
-                InstallMods(path);
+                InstallMods(path, manifest);
             }
             catch (Exception ex)
             {
@@ -291,25 +332,23 @@ namespace Mod_Installer
             }
         }
 
-        private void InstallMods(string path)
+        private void InstallMods(string path, ModManifest manifest)
         {
             var fileName = Path.GetFileName(path);
             var modName = Path.GetFileNameWithoutExtension(path);
             var modPath = Path.Combine(ModsTempPath, modName);
 
-            ModManifest manifest = ReadManifest(modName);
 
             var botPath = tbBOTDirectory.Text;
             var dbmPath = tbDBMDirectory.Text;
 
             Log($"Installing Mods to the provided directories, This may take a few minutes...");
 
-
             try
             {
                 if (Directory.Exists(botPath))
                 {
-                    Log($"Installing Mods Contained In '{manifest.Name}' to BOT at  '{botPath}'");
+                    Log($"Installing Mods Contained In '{(manifest == null ? modName : manifest.Name)}' to BOT at  '{botPath}'");
                     AddProgress();
                     CopyFolderContents(BotTempPath, botPath);
                     AddProgress();
@@ -317,7 +356,7 @@ namespace Mod_Installer
 
                 if (Directory.Exists(dbmPath))
                 {
-                    Log($"Installing Mods Contained In '{manifest.Name}' to DBM at  '{dbmPath}'");
+                    Log($"Installing Mods Contained In '{(manifest == null ? modName : manifest.Name)}' to DBM at  '{dbmPath}'");
                     AddProgress();
                     CopyFolderContents(DBMTempPath, dbmPath);
                     AddProgress();
@@ -366,7 +405,7 @@ namespace Mod_Installer
                !lbModZipList.Items.Contains(path) &&
                path.EndsWith(".zip"))
                 {
-                    if (HasManifest(path))
+                    if (HasManifest(path) || Config.Settings.AllowModsWithoutManifests)
                     {
                         if (!File.Exists(path))
                         {
@@ -396,7 +435,7 @@ namespace Mod_Installer
                     }
                     else
                     {
-                        Log($"Error: Missing 'modinfo.json' in '{path}'");
+                        Log($"Mod  Missing 'modinfo.json' in '{path}'");
                     }
                 }
             }
@@ -574,6 +613,12 @@ namespace Mod_Installer
             Config.SaveConfiguration();
         }
 
+        private void tbGlobalFileIgnores_TextChanged(object sender, EventArgs e)
+        {
+            Config.Settings.GlobalIgnores = tbGlobalFileIgnores.Text.Trim(',');
+            Config.SaveConfiguration();
+        }
+
         private void BackgroundWorker1_RunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
         {
             btnInstallMods.Enabled = true;
@@ -610,8 +655,25 @@ namespace Mod_Installer
             toolStripProgressBar1.Value = e.ProgressPercentage;
         }
 
-        #endregion Event Handlers
+        private void btnClearLog_Click(object sender, EventArgs e)
+        {
+            tbLog.Clear();
+        }
 
+        private void cbAllowModsWithoutManifests_CheckedChanged(object sender, EventArgs e)
+        {
+            Config.Settings.AllowModsWithoutManifests = cbAllowModsWithoutManifests.Checked;
+            Config.SaveConfiguration();
+        }
+
+        private void gbAdvancedOptions_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        #endregion Event Handlers
 
         #region Tool Menu
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -660,6 +722,9 @@ namespace Mod_Installer
         {
             System.Diagnostics.Process.Start(url);
         }
+
+
+
 
         #endregion
 

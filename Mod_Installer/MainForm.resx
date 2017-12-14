@@ -135,20 +135,81 @@
   <metadata name="ToolTips.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>667, 17</value>
   </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDBMDirectoryBrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDBMDirectoryBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 32</value>
+  </data>
+  <data name="btnDBMDirectoryBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnDBMDirectoryBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="btnDBMDirectoryBrowse.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="btnDBMDirectoryBrowse.ToolTip" xml:space="preserve">
+    <value>Browse For Folder</value>
+  </data>
+  <data name="&gt;&gt;btnDBMDirectoryBrowse.Name" xml:space="preserve">
+    <value>btnDBMDirectoryBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnDBMDirectoryBrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDBMDirectoryBrowse.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;btnDBMDirectoryBrowse.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnResyncMods.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnResyncMods.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnResyncMods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 23</value>
+  </data>
+  <data name="btnResyncMods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="btnResyncMods.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnResyncMods.Text" xml:space="preserve">
+    <value>Re-Sync Mods</value>
+  </data>
+  <data name="btnResyncMods.ToolTip" xml:space="preserve">
+    <value>Syncs all Mods between DBM, and bot Project Folder</value>
+  </data>
+  <data name="&gt;&gt;btnResyncMods.Name" xml:space="preserve">
+    <value>btnResyncMods</value>
+  </data>
+  <data name="&gt;&gt;btnResyncMods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnResyncMods.Parent" xml:space="preserve">
+    <value>gbAdvancedOptions</value>
+  </data>
+  <data name="&gt;&gt;btnResyncMods.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>764, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 422</value>
+    <value>0, 493</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>876, 22</value>
+    <value>778, 22</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
@@ -162,7 +223,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
   </data>
   <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
@@ -174,7 +238,7 @@
     <value>0, 0</value>
   </data>
   <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>876, 25</value>
+    <value>778, 25</value>
   </data>
   <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -189,12 +253,209 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="btnFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="btnQuit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 22</value>
+  </data>
+  <data name="btnQuit.Text" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="btnHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnHelp.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 22</value>
+  </data>
+  <data name="btnHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="btnReportIssues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnReportIssues.Text" xml:space="preserve">
+    <value>Report Issues</value>
+  </data>
+  <data name="btnOpenDBMGithub.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnOpenDBMGithub.Text" xml:space="preserve">
+    <value>DBM Mod Collection Github</value>
+  </data>
+  <data name="btnOpenDBMThemeGithub.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnOpenDBMThemeGithub.Text" xml:space="preserve">
+    <value>DBM Themes Github</value>
+  </data>
+  <data name="btnAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnAbout.Text" xml:space="preserve">
+    <value>About DBM Mod Installer</value>
+  </data>
+  <data name="btnPatreons.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnPatreons.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnPatreons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="btnPatreons.Text" xml:space="preserve">
+    <value>Patreon</value>
+  </data>
+  <data name="btnDBMPatreon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnDBMPatreon.Text" xml:space="preserve">
+    <value>Goto DBM Mods Patreon</value>
+  </data>
+  <data name="btnGeneralWrexPatreon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="btnGeneralWrexPatreon.Text" xml:space="preserve">
+    <value>Goto General Wrex's Patreon</value>
+  </data>
+  <data name="&gt;&gt;DBMDirectory_label.Name" xml:space="preserve">
+    <value>DBMDirectory_label</value>
+  </data>
+  <data name="&gt;&gt;DBMDirectory_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DBMDirectory_label.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;DBMDirectory_label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbDBMDirectory.Name" xml:space="preserve">
+    <value>tbDBMDirectory</value>
+  </data>
+  <data name="&gt;&gt;tbDBMDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbDBMDirectory.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;tbDBMDirectory.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbBOTDirectory.Name" xml:space="preserve">
+    <value>tbBOTDirectory</value>
+  </data>
+  <data name="&gt;&gt;tbBOTDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbBOTDirectory.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;tbBOTDirectory.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnBOTDirectoryBrowse.Name" xml:space="preserve">
+    <value>btnBOTDirectoryBrowse</value>
+  </data>
+  <data name="&gt;&gt;btnBOTDirectoryBrowse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBOTDirectoryBrowse.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;btnBOTDirectoryBrowse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BOTDirectory_label.Name" xml:space="preserve">
+    <value>BOTDirectory_label</value>
+  </data>
+  <data name="&gt;&gt;BOTDirectory_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BOTDirectory_label.Parent" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;BOTDirectory_label.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="gbDirectories.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="gbDirectories.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 113</value>
+  </data>
+  <data name="gbDirectories.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="gbDirectories.Text" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="&gt;&gt;gbDirectories.Name" xml:space="preserve">
+    <value>gbDirectories</value>
+  </data>
+  <data name="&gt;&gt;gbDirectories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbDirectories.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbDirectories.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="DBMDirectory_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DBMDirectory_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -242,36 +503,6 @@
   </data>
   <data name="&gt;&gt;tbDBMDirectory.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 32</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.Text" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse.ToolTip" xml:space="preserve">
-    <value>Browse For Folder</value>
-  </data>
-  <data name="&gt;&gt;btnDBMDirectoryBrowse.Name" xml:space="preserve">
-    <value>btnDBMDirectoryBrowse</value>
-  </data>
-  <data name="&gt;&gt;btnDBMDirectoryBrowse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnDBMDirectoryBrowse.Parent" xml:space="preserve">
-    <value>gbDirectories</value>
-  </data>
-  <data name="&gt;&gt;btnDBMDirectoryBrowse.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="tbBOTDirectory.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 76</value>
@@ -351,30 +582,6 @@
   <data name="&gt;&gt;BOTDirectory_label.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="gbDirectories.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 28</value>
-  </data>
-  <data name="gbDirectories.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 113</value>
-  </data>
-  <data name="gbDirectories.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="gbDirectories.Text" xml:space="preserve">
-    <value>Directories</value>
-  </data>
-  <data name="&gt;&gt;gbDirectories.Name" xml:space="preserve">
-    <value>gbDirectories</value>
-  </data>
-  <data name="&gt;&gt;gbDirectories.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbDirectories.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbDirectories.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;lbModZipList.Name" xml:space="preserve">
     <value>lbModZipList</value>
   </data>
@@ -433,7 +640,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gbSelectedModZIPArchives.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lbModZipList.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -510,128 +717,80 @@
   <data name="&gt;&gt;btnAddZipArchive.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage_label.Name" xml:space="preserve">
-    <value>cbbLanguage_label</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage_label.Parent" xml:space="preserve">
-    <value>gbAdvancedOptions</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage_label.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Name" xml:space="preserve">
-    <value>cbbLanguage</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.Parent" xml:space="preserve">
-    <value>gbAdvancedOptions</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>gbAdvancedOptions</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnResyncMods.Name" xml:space="preserve">
-    <value>btnResyncMods</value>
-  </data>
-  <data name="&gt;&gt;btnResyncMods.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResyncMods.Parent" xml:space="preserve">
-    <value>gbAdvancedOptions</value>
-  </data>
-  <data name="&gt;&gt;btnResyncMods.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="gbAdvancedOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 334</value>
-  </data>
-  <data name="gbAdvancedOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 73</value>
-  </data>
-  <data name="gbAdvancedOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="gbAdvancedOptions.Text" xml:space="preserve">
-    <value>Advanced Options</value>
-  </data>
-  <data name="&gt;&gt;gbAdvancedOptions.Name" xml:space="preserve">
-    <value>gbAdvancedOptions</value>
-  </data>
-  <data name="&gt;&gt;gbAdvancedOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbAdvancedOptions.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbAdvancedOptions.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="cbbLanguage_label.AutoSize" type="System.Boolean, mscorlib">
+  <data name="cbAllowModsWithoutManifests.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="cbbLanguage_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cbAllowModsWithoutManifests.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 65</value>
   </data>
-  <data name="cbbLanguage_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>200, 23</value>
+  <data name="cbAllowModsWithoutManifests.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 17</value>
   </data>
-  <data name="cbbLanguage_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+  <data name="cbAllowModsWithoutManifests.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="cbbLanguage_label.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cbAllowModsWithoutManifests.Text" xml:space="preserve">
+    <value>Allow Mods Without Manifests</value>
   </data>
-  <data name="cbbLanguage_label.Text" xml:space="preserve">
-    <value>Language:</value>
+  <data name="&gt;&gt;cbAllowModsWithoutManifests.Name" xml:space="preserve">
+    <value>cbAllowModsWithoutManifests</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage_label.Name" xml:space="preserve">
-    <value>cbbLanguage_label</value>
+  <data name="&gt;&gt;cbAllowModsWithoutManifests.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbbLanguage_label.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbAllowModsWithoutManifests.Parent" xml:space="preserve">
     <value>gbAdvancedOptions</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage_label.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cbAllowModsWithoutManifests.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cbbLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 19</value>
+  <data name="GlobalFileIgnores_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="cbbLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 21</value>
+  <data name="GlobalFileIgnores_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 108</value>
   </data>
-  <data name="cbbLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="GlobalFileIgnores_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 13</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage.Name" xml:space="preserve">
-    <value>cbbLanguage</value>
+  <data name="GlobalFileIgnores_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GlobalFileIgnores_Label.Text" xml:space="preserve">
+    <value>Global File Ignores (Seperate with a comma)</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GlobalFileIgnores_Label.Name" xml:space="preserve">
+    <value>GlobalFileIgnores_Label</value>
+  </data>
+  <data name="&gt;&gt;GlobalFileIgnores_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GlobalFileIgnores_Label.Parent" xml:space="preserve">
     <value>gbAdvancedOptions</value>
   </data>
-  <data name="&gt;&gt;cbbLanguage.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;GlobalFileIgnores_Label.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="tbGlobalFileIgnores.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 124</value>
+  </data>
+  <data name="tbGlobalFileIgnores.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 20</value>
+  </data>
+  <data name="tbGlobalFileIgnores.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbGlobalFileIgnores.Name" xml:space="preserve">
+    <value>tbGlobalFileIgnores</value>
+  </data>
+  <data name="&gt;&gt;tbGlobalFileIgnores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbGlobalFileIgnores.Parent" xml:space="preserve">
+    <value>gbAdvancedOptions</value>
+  </data>
+  <data name="&gt;&gt;tbGlobalFileIgnores.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -658,39 +817,81 @@
     <value>gbAdvancedOptions</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
-  <data name="btnResyncMods.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="cbbLanguage_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btnResyncMods.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cbbLanguage_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnResyncMods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+  <data name="cbbLanguage_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 26</value>
   </data>
-  <data name="btnResyncMods.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 21</value>
+  <data name="cbbLanguage_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
   </data>
-  <data name="btnResyncMods.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="cbbLanguage_label.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="btnResyncMods.Text" xml:space="preserve">
-    <value>Re-Sync Mods</value>
+  <data name="cbbLanguage_label.Text" xml:space="preserve">
+    <value>Select Language</value>
   </data>
-  <data name="btnResyncMods.ToolTip" xml:space="preserve">
-    <value>Syncs all Mods between DBM, and bot Project Folder</value>
+  <data name="&gt;&gt;cbbLanguage_label.Name" xml:space="preserve">
+    <value>cbbLanguage_label</value>
   </data>
-  <data name="&gt;&gt;btnResyncMods.Name" xml:space="preserve">
-    <value>btnResyncMods</value>
+  <data name="&gt;&gt;cbbLanguage_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnResyncMods.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnResyncMods.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cbbLanguage_label.Parent" xml:space="preserve">
     <value>gbAdvancedOptions</value>
   </data>
-  <data name="&gt;&gt;btnResyncMods.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cbbLanguage_label.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbbLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 22</value>
+  </data>
+  <data name="cbbLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 21</value>
+  </data>
+  <data name="cbbLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbbLanguage.Name" xml:space="preserve">
+    <value>cbbLanguage</value>
+  </data>
+  <data name="&gt;&gt;cbbLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbbLanguage.Parent" xml:space="preserve">
+    <value>gbAdvancedOptions</value>
+  </data>
+  <data name="&gt;&gt;cbbLanguage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gbAdvancedOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 334</value>
+  </data>
+  <data name="gbAdvancedOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 156</value>
+  </data>
+  <data name="gbAdvancedOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="gbAdvancedOptions.Text" xml:space="preserve">
+    <value>Advanced Options</value>
+  </data>
+  <data name="&gt;&gt;gbAdvancedOptions.Name" xml:space="preserve">
+    <value>gbAdvancedOptions</value>
+  </data>
+  <data name="&gt;&gt;gbAdvancedOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbAdvancedOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbAdvancedOptions.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;tbLog.Name" xml:space="preserve">
@@ -709,7 +910,7 @@
     <value>414, 28</value>
   </data>
   <data name="dbmModInstallerLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>452, 379</value>
+    <value>351, 427</value>
   </data>
   <data name="dbmModInstallerLog.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -727,7 +928,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dbmModInstallerLog.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="tbLog.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -739,7 +940,7 @@
     <value>Vertical</value>
   </data>
   <data name="tbLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 354</value>
+    <value>336, 402</value>
   </data>
   <data name="tbLog.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -781,121 +982,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnInstallMods.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
-  <data name="btnFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
+  <data name="btnClearLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>658, 461</value>
   </data>
-  <data name="btnFile.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="btnClearLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 23</value>
   </data>
-  <data name="btnFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 22</value>
+  <data name="btnClearLog.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
   </data>
-  <data name="btnFile.Text" xml:space="preserve">
-    <value>File</value>
+  <data name="btnClearLog.Text" xml:space="preserve">
+    <value>Clear Log</value>
   </data>
-  <data name="btnQuit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="&gt;&gt;btnClearLog.Name" xml:space="preserve">
+    <value>btnClearLog</value>
   </data>
-  <data name="btnQuit.Text" xml:space="preserve">
-    <value>Quit</value>
+  <data name="&gt;&gt;btnClearLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;btnClearLog.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btnHelp.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 22</value>
-  </data>
-  <data name="btnHelp.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="btnPatreons.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
-        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
-        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
-        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
-        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
-        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
-        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
-        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
-        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
-        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnPatreons.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="btnPatreons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
-  </data>
-  <data name="btnPatreons.Text" xml:space="preserve">
-    <value>Patreon</value>
-  </data>
-  <data name="btnReportIssues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnReportIssues.Text" xml:space="preserve">
-    <value>Report Issues</value>
-  </data>
-  <data name="btnOpenDBMGithub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnOpenDBMGithub.Text" xml:space="preserve">
-    <value>DBM Mod Collection Github</value>
-  </data>
-  <data name="btnDBMPatreon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnDBMPatreon.Text" xml:space="preserve">
-    <value>Goto DBM Mods Patreon</value>
-  </data>
-  <data name="btnGeneralWrexPatreon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnGeneralWrexPatreon.Text" xml:space="preserve">
-    <value>Goto General Wrex's Patreon</value>
-  </data>
-  <data name="btnOpenDBMThemeGithub.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnOpenDBMThemeGithub.Text" xml:space="preserve">
-    <value>DBM Themes Github</value>
-  </data>
-  <data name="btnAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="btnAbout.Text" xml:space="preserve">
-    <value>About DBM Mod Installer</value>
+  <data name="&gt;&gt;btnClearLog.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -904,10 +1015,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>876, 444</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>778, 515</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>DBM Mod Installer - Created by General Wrex for the DBM Mods Collection</value>
@@ -966,12 +1074,6 @@
   <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnPatreons.Name" xml:space="preserve">
-    <value>btnPatreons</value>
-  </data>
-  <data name="&gt;&gt;btnPatreons.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;btnReportIssues.Name" xml:space="preserve">
     <value>btnReportIssues</value>
   </data>
@@ -984,18 +1086,6 @@
   <data name="&gt;&gt;btnOpenDBMGithub.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnDBMPatreon.Name" xml:space="preserve">
-    <value>btnDBMPatreon</value>
-  </data>
-  <data name="&gt;&gt;btnDBMPatreon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGeneralWrexPatreon.Name" xml:space="preserve">
-    <value>btnGeneralWrexPatreon</value>
-  </data>
-  <data name="&gt;&gt;btnGeneralWrexPatreon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;btnOpenDBMThemeGithub.Name" xml:space="preserve">
     <value>btnOpenDBMThemeGithub</value>
   </data>
@@ -1006,6 +1096,24 @@
     <value>btnAbout</value>
   </data>
   <data name="&gt;&gt;btnAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPatreons.Name" xml:space="preserve">
+    <value>btnPatreons</value>
+  </data>
+  <data name="&gt;&gt;btnPatreons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDBMPatreon.Name" xml:space="preserve">
+    <value>btnDBMPatreon</value>
+  </data>
+  <data name="&gt;&gt;btnDBMPatreon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGeneralWrexPatreon.Name" xml:space="preserve">
+    <value>btnGeneralWrexPatreon</value>
+  </data>
+  <data name="&gt;&gt;btnGeneralWrexPatreon.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

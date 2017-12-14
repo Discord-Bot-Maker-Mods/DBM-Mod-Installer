@@ -117,46 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BOTDirectory_label" xml:space="preserve">
+    <value>Bot Project Main Directory</value>
+  </data>
+  <data name="btnAddZipArchive" xml:space="preserve">
+    <value>Add Zip Archive(s)</value>
+  </data>
+  <data name="btnBOTDirectoryBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="btnDBMDirectoryBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="btnInstallMods" xml:space="preserve">
+    <value>Install Mods</value>
+  </data>
+  <data name="btnRemoveSelectedZip" xml:space="preserve">
+    <value>Remove From List</value>
+  </data>
+  <data name="btnResyncMods" xml:space="preserve">
+    <value>Re-Sync Mods</value>
+  </data>
+  <data name="DBMDirectory_label" xml:space="preserve">
+    <value>Discord Bot Maker Main Directory</value>
+  </data>
+  <data name="gbAdvancedOptions" xml:space="preserve">
+    <value>Advanced Options</value>
+  </data>
+  <data name="gbDirectories" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="gbSelectedModZIPArchives" xml:space="preserve">
+    <value>Selected Mod ZIP Archives (Or drag and drop ZIP onto it)</value>
+  </data>
+  <data name="groupBox6" xml:space="preserve">
+    <value>DBM Mod Installer Log</value>
+  </data>
   <data name="language" xml:space="preserve">
     <value>en-US</value>
   </data>
   <data name="MainForm" xml:space="preserve">
     <value>DBM Mod Installer</value>
-  </data>
-  <data name="gbDirectories" xml:space="preserve">
-    <value>Directories</value>
-  </data>
-  <data name="DBMDirectory_label" xml:space="preserve">
-    <value>Discord Bot Maker Main Directory</value>
-  </data>
-  <data name="btnDBMDirectoryBrowse" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="btnBOTDirectoryBrowse" xml:space="preserve">
-    <value>Browse</value>
-  </data>
-  <data name="BOTDirectory_label" xml:space="preserve">
-    <value>Bot Project Main Directory</value>
-  </data>
-  <data name="gbSelectedModZIPArchives" xml:space="preserve">
-    <value>Selected Mod ZIP Archives (Or drag and drop ZIP onto it)</value>
-  </data>
-  <data name="btnRemoveSelectedZip" xml:space="preserve">
-    <value>Remove From List</value>
-  </data>
-  <data name="btnAddZipArchive" xml:space="preserve">
-    <value>Add Zip Archive(s)</value>
-  </data>
-  <data name="gbAdvancedOptions" xml:space="preserve">
-    <value>Advanced Options</value>
-  </data>
-  <data name="btnResyncMods" xml:space="preserve">
-    <value>Re-Sync Mods</value>
-  </data>
-  <data name="groupBox6" xml:space="preserve">
-    <value>DBM Mod Installer Log</value>
-  </data>
-  <data name="btnInstallMods" xml:space="preserve">
-    <value>Install Mods</value>
   </data>
 </root>

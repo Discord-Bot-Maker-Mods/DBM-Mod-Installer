@@ -47,6 +47,12 @@ namespace Mod_Installer
         [Description("List of ModZips")]
         public List<string> ZipFiles;
 
+        [Description("List of comma seperated values of files to ignore")]
+        public string GlobalIgnores;
+
+        [Description("Allow the installation of mods without manifests (Warning: this may add unneeded files!)")]
+        public bool AllowModsWithoutManifests;
+
 
         [Description("Enable Verbose printing to the Log")]
         public bool DebugMode;
@@ -55,6 +61,11 @@ namespace Mod_Installer
         {
             AvailableLanguages.Add("en-US", "English - United States");
             AvailableLanguages.Add("de-DE", "German - Germany");
+
+            AllowModsWithoutManifests = true;
+
+            GlobalIgnores = "*.md, .git, LICENSE";
+
 
             DBMRootPath = "";
             BotProjectPath = "";
