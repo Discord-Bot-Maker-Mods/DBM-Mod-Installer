@@ -124,10 +124,10 @@
     <value>ZIP Archiv(e) hinzufügen</value>
   </data>
   <data name="btnBOTDirectoryBrowse" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Suchen</value>
   </data>
   <data name="btnDBMDirectoryBrowse" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Suchen</value>
   </data>
   <data name="btnInstallMods" xml:space="preserve">
     <value>Mods installieren</value>
